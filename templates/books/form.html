@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}{{ heading }}{% endblock %}
+{% block content %}
+<h1>{{ heading }}</h1>
+<form method="post" action="{{ action_url }}" class="card">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+  <label for="title">Title</label>
+  <input id="title" name="title" type="text" maxlength="200" required value="{{ form['title'] if form else '' }}">
+
+  <label for="library_name">Library name</label>
+  <input id="library_name" name="library_name" type="text" maxlength="100" required value="{{ form['library_name'] if form else '' }}">
+
+  <label for="due_date">Due date</label>
+  <input id="due_date" name="due_date" type="date" required value="{{ form['due_date'] if form else '' }}">
+
+  <button type="submit">{{ submit_label }}</button>
+  <a href="{{ url_for('books.list_books') }}">Cancel</a>
+</form>
+{% endblock %}

@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; background: #f6f7f9; line-height: 1.5; }
+.site-header { display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1.5rem; background: #25476a; color: #fff; }
+.site-header a, .link-button { color: #fff; margin-left: 1rem; text-decoration: none; }
+.brand { font-weight: bold; font-size: 1.2rem; margin-left: 0; }
+.who { opacity: 0.85; }
+main { max-width: 800px; margin: 1.5rem auto; padding: 0 1rem; }
+a { color: #25476a; }
+.card { background: #fff; padding: 1.25rem; border-radius: 6px; border: 1px solid #dde; max-width: 420px; }
+label { display: block; margin-top: 0.75rem; font-weight: bold; }
+input { width: 100%; padding: 0.5rem; margin-top: 0.25rem; border: 1px solid #aab; border-radius: 4px; font-size: 1rem; }
+button, .button { display: inline-block; margin-top: 1rem; padding: 0.55rem 1rem; background: #25476a; color: #fff; border: 0; border-radius: 4px; font-size: 1rem; cursor: pointer; text-decoration: none; }
+form.inline { display: inline; }
+.link-button { background: none; padding: 0; margin: 0 0 0 1rem; font-size: 1rem; text-decoration: underline; cursor: pointer; border: 0; }
+td .link-button { color: #25476a; margin-left: 0.75rem; }
+table { width: 100%; border-collapse: collapse; background: #fff; margin-bottom: 1.5rem; }
+th, td { text-align: left; padding: 0.55rem; border-bottom: 1px solid #e3e3ea; }
+.flash { padding: 0.6rem 0.9rem; border-radius: 4px; }
+.flash.success { background: #e3f4e5; border: 1px solid #9fd1a5; }
+.flash.error { background: #fbe5e5; border: 1px solid #e0a0a0; }
+
+/* ---- Stage 2: due-date status ---- */
+.summary { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 1rem 0; }
+.summary-box { flex: 1; min-width: 120px; padding: 0.6rem 0.8rem; border-radius: 6px; border: 1px solid; }
+.summary-box strong { display: block; font-size: 1.6rem; }
+.badge { display: inline-block; padding: 0.15rem 0.55rem; border-radius: 12px; border: 1px solid; font-size: 0.9rem; font-weight: bold; }
+.status-green  { background: #e3f4e5; border-color: #8cc994; color: #14501c; }
+.status-yellow { background: #fff3c4; border-color: #d9b840; color: #6b4e00; }
+.status-red    { background: #fbd9d9; border-color: #d98a8a; color: #8a1c1c; }
+tr.row-today td { background: #fffbe6; font-weight: bold; }
